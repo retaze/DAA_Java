@@ -43,7 +43,7 @@ public class Dateneingaben {
 				user = sc.nextLine();
 				System.out.println("Geben Sie hier Ihr Passwort ein: ");
 				password = sc.nextInt();
-				System.out.println("Bentzername ist "+user+" und Kennwort ist "+password);
+				System.out.println("Benutzername ist "+user+" und Passwort ist "+password);
 								
 		
 				
