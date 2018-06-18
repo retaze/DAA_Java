@@ -40,7 +40,7 @@ public class Dateneingaben {
 				//Eingabedialog
 
 				System.out.println("Geben Sie hier ihren Benutzernamen ein: ");
-				user = sc.next();
+				user = sc.nextLine();
 				System.out.println("Geben Sie hier Ihr Passwort ein: ");
 				password = sc.nextInt();
 				System.out.println("Bentzername ist "+user+" und Kennwort ist "+password);
