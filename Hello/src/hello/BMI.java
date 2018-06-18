@@ -4,13 +4,13 @@ public class BMI {
 
 	public static void main(String[] args) {
 		
-		int groesse = 187;
-		int bmi = 0;
-		double gewicht = 67.5;
+		int groesse = 16;
+		double bmi = 0;
+		int gewicht = 12;
 		
-		bmi = (int) ((gewicht*10000)/(groesse*groesse));
+		bmi = (double) groesse/gewicht;
 		
-		System.out.println("Mit einem Körpergewicht von "+gewicht+" kg und einer Körpergröße von "+groesse+" cm haben Sie einen BMI von: "+bmi);
+		System.out.println(bmi);
 	}
 
 }
