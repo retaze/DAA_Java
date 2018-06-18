@@ -8,7 +8,7 @@ public class BMI {
 		double bmi = 0;
 		int gewicht = 12;
 		
-		bmi = (double) groesse/gewicht;
+		bmi = (int) groesse/gewicht;
 		
 		System.out.println(bmi);
 	}
