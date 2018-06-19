@@ -4,9 +4,9 @@ public class BMI {
 
 	public static void main(String[] args) {
 		
-		int groesse = 187;
+		int groesse = 189;
 		double bmi;
-		double gewicht = 67.50;
+		double gewicht = 95.00;
 
         bmi = (float) gewicht / (groesse * groesse) * 10000;
 		
