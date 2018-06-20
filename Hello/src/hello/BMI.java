@@ -6,7 +6,7 @@ public class BMI {
 		
 		int groesse = 189;
 		double bmi;
-		double gewicht = 95.00;
+		double gewicht = 78.00;
 
         bmi = (float) gewicht / (groesse * groesse) * 10000;
 		
