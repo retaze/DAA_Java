@@ -72,31 +72,23 @@ public class Steueranweisungen {
         */
 
         //Aufgabe (2.7)
+
         String text;
         char zeichen;
         Scanner sc = new Scanner(System.in);
         System.out.println("Geben Sie ein Zeichen, Ziffer oder ein Sonderzeichen ein:");
         zeichen = sc.next(".").charAt(0);
 
-        if (zeichen >= 97 && zeichen <=122)
-        {
-            text = zeichen+" ist eine kleiner Buchstabe.";
-        }
-        else
-        {
-            if (zeichen >= 65 && zeichen <= 90)
-            {
-                text = zeichen+" ist ein großer Buchstabe.";
-            }
-            else
-            {
-                if (zeichen >= 48 && zeichen <= 58)
-                {
-                    text = zeichen+" ist eine Ziffer.";
-                }
-                else
-                {
-                    text = zeichen+" ist eine sonstiges Zeichen.";
+        if (zeichen >= 97 && zeichen <= 122) {
+            text = zeichen + " ist eine kleiner Buchstabe.";
+        } else {
+            if (zeichen >= 65 && zeichen <= 90) {
+                text = zeichen + " ist ein großer Buchstabe.";
+            } else {
+                if (zeichen >= 48 && zeichen <= 58) {
+                    text = zeichen + " ist eine Ziffer.";
+                } else {
+                    text = zeichen + " ist eine sonstiges Zeichen.";
                 }
             }
         }
