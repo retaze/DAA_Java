@@ -51,7 +51,6 @@ public class Steueranweisungen {
             abs=z2-z1;
         }
         System.out.println(abs);
-        */
 
         //Aufgabe (2.4)
         int z1;
@@ -70,5 +69,37 @@ public class Steueranweisungen {
             max=z2;
         }
         System.out.println(max+" ist das Maximum");
+        */
+
+        //Aufgabe (2.7)
+        String text;
+        char zeichen;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Geben Sie ein Zeichen, Ziffer oder ein Sonderzeichen ein:");
+        zeichen = sc.next(".").charAt(0);
+
+        if (zeichen >= 97 && zeichen <=122)
+        {
+            text = zeichen+" ist eine kleiner Buchstabe.";
+        }
+        else
+        {
+            if (zeichen >= 65 && zeichen <= 90)
+            {
+                text = zeichen+" ist ein großer Buchstabe.";
+            }
+            else
+            {
+                if (zeichen >= 48 && zeichen <= 58)
+                {
+                    text = zeichen+" ist eine Ziffer.";
+                }
+                else
+                {
+                    text = zeichen+" ist eine sonstiges Zeichen.";
+                }
+            }
+        }
+        System.out.println(text);
     }
 }
