@@ -69,10 +69,8 @@ public class Steueranweisungen {
             max=z2;
         }
         System.out.println(max+" ist das Maximum");
-        */
 
         //Aufgabe (2.7)
-
         String text;
         char zeichen;
         Scanner sc = new Scanner(System.in);
@@ -93,5 +91,38 @@ public class Steueranweisungen {
             }
         }
         System.out.println(text);
+        */
+
+        //Aufgabe (2.14)
+        float wert;
+        int versand = 0;
+        double rabatt = 1;
+        double preis;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Warenwert eingeben");
+        wert = sc.nextFloat();
+
+        if (wert >= 500) {
+            rabatt = 0.95;
+        } else {
+            if (wert >= 250) {
+
+            } else {
+                if (wert >= 100) {
+                    versand = 4;
+                } else {
+                    if (wert >= 20) {
+                        versand = 7;
+                    } else {
+                        versand = 10;
+                    }
+                }
+            }
+        }
+        preis = (wert * rabatt) + versand;
+        System.out.println("Der Endpreis für " + wert + " € Warenwert ist: " + preis + " €.");
+
+
     }
 }
