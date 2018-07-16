@@ -139,7 +139,7 @@ public class Steueranweisungen {
         div = sc.nextInt();
 
         for (i = start; i <= end; i++) {
-            System.out.println(i+"/"+div+" = " + i/div + " Rest " + i % div);
+            System.out.println(i + "/" + div + " = " + i / div + " Rest " + i % div);
         }
 
 
