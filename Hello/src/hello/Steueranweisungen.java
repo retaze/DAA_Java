@@ -91,7 +91,6 @@ public class Steueranweisungen {
             }
         }
         System.out.println(text);
-        */
 
         //Aufgabe (2.14)
         float wert;
@@ -122,6 +121,26 @@ public class Steueranweisungen {
         }
         preis = (wert * rabatt) + versand;
         System.out.println("Der Endpreis für " + wert + " € Warenwert ist: " + preis + " €.");
+        */
+
+        //(3.7) Ganzzahlige Division mit Rest
+        int start;
+        int end;
+        int div;
+        int i;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Start eingeben");
+        start = sc.nextInt();
+        System.out.println("End eingeben");
+        end = sc.nextInt();
+        System.out.println("Divisor eingeben");
+        div = sc.nextInt();
+
+        for (i = start; i <= end; i++) {
+            System.out.println(i+"/"+div+" = " + i/div + " Rest " + i % div);
+        }
 
 
     }
