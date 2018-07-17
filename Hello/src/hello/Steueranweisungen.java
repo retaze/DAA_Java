@@ -141,7 +141,6 @@ public class Steueranweisungen {
         for (i = start; i <= end; i++) {
             System.out.println(i + "/" + div + " = " + i / div + " Rest " + i % div);
         }
-*/
 
         //Übung
         int x1, x2, p, i;
@@ -163,6 +162,58 @@ public class Steueranweisungen {
             }
 
         }
+*/
+        //Gehaltsfaktor
+        int Alter, Kinder;
+        double gFaktor, aFaktor, kFaktor;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Bitte geben Sie Ihr Alter ein: ");
+        Alter = sc.nextInt();
+        System.out.print("Wie viele Kinder haben Sie?");
+        Kinder = sc.nextInt();
+
+        if (Alter < 18) {
+            aFaktor = 0.3;
+        } else {
+            if (Alter <= 25) {
+                aFaktor = 0.25;
+            } else {
+                if (Alter <= 35) {
+                    aFaktor = 0.45;
+                } else {
+                    if (Alter <= 45) {
+                        aFaktor = 0.65;
+                    } else {
+                        if (Alter <= 55) {
+                            aFaktor = 0.8;
+                        } else {
+                            aFaktor = 1.01;
+                        }
+                    }
+                }
+            }
+        }
+        switch (Kinder) {
+            case 0:
+                kFaktor = 0;
+                break;
+            case 1:
+                kFaktor = 0.03;
+                break;
+            case 2:
+                kFaktor = 0.045;
+                break;
+            case 3:
+                kFaktor = 0.05;
+                break;
+            default:
+                kFaktor = (Kinder - 3) * 0.01 + 0.05;
+        }
+        gFaktor = aFaktor + kFaktor;
+        System.out.print("Mit Ihren " + Alter + " Jahren und " + Kinder + " Kindern haben Sie einen Gehaltsfaktor von " + gFaktor);
+        }
+
+
 
     }
-}
