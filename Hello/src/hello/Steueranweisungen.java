@@ -208,7 +208,7 @@ public class Steueranweisungen {
                 kFaktor = 0.05;
                 break;
             default:
-                kFaktor = (Kinder - 3) * 0.01;
+                kFaktor = (Kinder - 3) * 0.01 + 0.05;
         }
         gFaktor = aFaktor + kFaktor;
         System.out.print("Mit Ihren " + Alter + " Jahren und " + Kinder + " Kindern haben Sie einen Gehaltsfaktor von " + gFaktor);
