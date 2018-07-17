@@ -212,5 +212,8 @@ public class Steueranweisungen {
         }
         gFaktor = aFaktor + kFaktor;
         System.out.print("Mit Ihren " + Alter + " Jahren und " + Kinder + " Kindern haben Sie einen Gehaltsfaktor von " + gFaktor);
-            }
-}
+        }
+
+
+
+    }
