@@ -1,9 +1,0 @@
-.class1    {font-size: 30px; color: #138c6e; background-color: #FFFFFF; }
-.class2   {font-size: 30px; color: #138c6e; background-color: #FFFFFF; }
-
-a {font-size: 20px}
-a:hover {text-decoration: underline; color: #138c6e;}
-.schatten {text-shadow: 6px 6px 0px #97925C; font-weight: bold;}
-body {
-  background-image: url("sterne.jpg");
-}
