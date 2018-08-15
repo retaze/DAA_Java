@@ -1,15 +1,20 @@
 package hello;
 
-public class Funktionen {
+ class Funktionen {
 
 
     public static int maximum( int z1, int z2){
+
         int max = 0;
-        if (z1 > z2) {
+
+        if (z1 > z2)
+            {
             max = z1;
-        } else {
+            }
+        else
+            {
             max = z2;
-        }
+            }
         return max;
     }
 }
