@@ -14,7 +14,7 @@ public class Autohaus {
         platz = sc.nextInt();
 
         rueckgabe = Lager(platz);
-        System.out.println(rueckgabe);
+        System.out.println("Ihr Auto befindet sich in Reihe/Spalte: "+rueckgabe);
     }
 
     public static String Lager(int platz) {
@@ -22,9 +22,8 @@ public class Autohaus {
         int reihe, spalte;
         String rueckgabe;
 
-        reihe = (int) platz / 7;
-        if (platz % 7 != 0)
-        {
+        reihe = platz / 7;
+        if (platz % 7 != 0) {
             reihe++;
         }
         spalte = platz - ((reihe - 1) * 7);
