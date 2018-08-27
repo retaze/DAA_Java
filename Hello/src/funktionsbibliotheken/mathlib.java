@@ -4,7 +4,7 @@ public class mathlib {
 
     public static int maximum(int z1, int z2) {
 
-        return (z1 < z2 ? z1 : z2);
+        return (z1 > z2 ? z1 : z2);
 
     }
 
