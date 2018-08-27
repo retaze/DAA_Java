@@ -25,11 +25,10 @@ public class Functions {
         System.out.print(max + " ist das Minimum");*/
 
         int a = 105;
-        int b = 50;
+        int b = 49;
 
         System.out.println("Test der mathematischen Funktionen\n");
-        System.out.println("Oktalwert von " + a + " ist " + mathlib.oktal(a));
-        System.out.println("Oktalwert von " + b + " ist " + mathlib.oktal(b));
+        System.out.println("Kleinstes gemeinsames Vielfaches von: " + a + " und " + b + " ist: " + mathlib.kgV(a, b));
 
 
     }
