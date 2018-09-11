@@ -1,5 +1,6 @@
 package hello;
 
+
 public class Arrays {
 
     public static void main(String args[]) {
@@ -41,26 +42,97 @@ public class Arrays {
         for (int i = 0; i < 7; i++) {
 
             System.out.println(i+" => "+ arr[i]);
-        }*/
-
-        float aUmsatz[] = {550.f, 1610.f, 495.f, 5035.f, 11300.f, 999.f};
+        }
+        //Rabattsatz
+        float aUmsatz[] = {550, 1610, 495, 5035, 11300, 999};
         float rabSatz;
 
         System.out.printf("Rabattsatzberechnung\n");
         for (int i = 0; i < 6; i++) {
-            if (aUmsatz[i] >= 5000.f) {
-                rabSatz = 5.f;
-            } else if (aUmsatz[i] >= 2000.f) {
-                rabSatz = 3.f;
-            } else if (aUmsatz[i] >= 500.f) {
-                rabSatz = 2.f;
+            if (aUmsatz[i] >= 5000) {
+                rabSatz = 5;
+            } else if (aUmsatz[i] >= 2000) {
+                rabSatz = 3;
+            } else if (aUmsatz[i] >= 500) {
+                rabSatz = 2;
             } else {
                 rabSatz = 0;
             }
-            System.out.println(aUmsatz[i]+"\t => "+rabSatz);
+            System.out.println(aUmsatz[i] + "\t => " + rabSatz);
 
         }
 
+        //Wochentag
+        System.out.println("Test wochenTagName\n");
+        for (int nr = 0; nr < 7; nr++) {
+            System.out.println(nr + " => " + wochenTagName2(nr));
+        }*/
 
+        //Versandkostenberechnung
+        String art;
+        float kosten;
+        float endPreis;
+        float wWert[] = {800, 400, 200, 80, 10};
+
+        for (int i = 0; i < 5; i++) {
+            if (wWert[i] < 20) {
+                kosten = 10;
+                art = "Vers.-Ko:";
+            } else if (wWert[i] < 100) {
+                kosten = 7;
+                art = "Vers.-Ko:";
+            } else if (wWert[i] < 250) {
+                kosten = 4;
+                art = "Vers.-Ko:";
+            } else if (wWert[i] < 500) {
+                kosten = 0;
+                art = "";
+            } else {
+                kosten = (float) (wWert[i] * -0.05);
+                art = "Rabatt";
+            }
+            endPreis = wWert[i] + kosten;
+            System.out.println("Warenwert: " + wWert[i] + " - " + art + " = " + kosten + " => " + endPreis);
+        }
     }
+
 }
+
+    /*public static String wochenTagName(int nr) {
+        String na = "";
+
+        switch (nr) {
+            case 0:
+                na = "Sonntag";
+                break;
+            case 1:
+                na = "Montag";
+                break;
+            case 2:
+                na = "Dienstag";
+                break;
+            case 3:
+                na = "Mittwoch";
+                break;
+            case 4:
+                na = "Donnerstag";
+                break;
+            case 5:
+                na = "Freitag";
+                break;
+            case 6:
+                na = "Samstag";
+                break;
+        }
+        return na;
+    }
+
+    public static String wochenTagName2(int nr) {
+        if (nr < 0 || nr > 6) {
+            return "";
+        }
+        String aNa[] = {"Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"};
+        return aNa[nr];
+    }*/
+
+
