@@ -259,8 +259,16 @@ public class FahrzeuglisteA {
             }
         }
 
+        System.out.println("Anzahl der Zeichen des laengsten Eintrages jeder Spalte: " + laenge1 + ", " + laenge2 + ", " + laenge3 + ", " + laenge4 + ", " + laenge5 + ", " + laenge6 + ", " + laenge7 + ", " + laenge8 + "\n");
+
+        String leer;
+        for (int i = 0; i < 17; i++) {
+            for (int j = 0; j <= leer.length(); j++) {
+                String leer = leer + " ";
+            }
+            System.out.println(fahrzeuge[i].fzNr + leer + "|" + fahrzeuge[i].hersteller + leer + "|");
+        }
 
 
-        System.out.println("Anzahl der Zeichen des laengsten Eintrages jeder Spalte: " + laenge1 + ", " + laenge2 + ", " + laenge3 + ", " + laenge4 + ", "+ laenge5+", " + laenge6 +", " + laenge7 +", " + laenge8 + "\n");
     }
 }
