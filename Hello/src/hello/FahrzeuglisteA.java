@@ -106,6 +106,7 @@ public class FahrzeuglisteA {
         fahrzeuge[8].ez = "02.01.2015";
         fahrzeuge[8].km = 10;
         fahrzeuge[8].preis = 13250;
+        fahrzeuge[9].fzNr = 150021;
         fahrzeuge[9].hersteller = "Ford";
         fahrzeuge[9].typ = "Fiesta";
         fahrzeuge[9].ausfuehrung = "Pinta";
@@ -178,97 +179,187 @@ public class FahrzeuglisteA {
         fahrzeuge[17].km = 80052;
         fahrzeuge[17].preis = 98000;
 
+        int laenge[] = new int[8];
 
-        int laenge1 = 0;
         int pos1 = 0;
         for (int i = 1; i <= 17; i++) {
             if (String.valueOf(fahrzeuge[pos1].fzNr).length() == String.valueOf(fahrzeuge[i].fzNr).length()) {
-                laenge1 = String.valueOf(fahrzeuge[pos1].fzNr).length();
+                laenge[0] = String.valueOf(fahrzeuge[pos1].fzNr).length();
             }
             if (String.valueOf(fahrzeuge[pos1].fzNr).length() < String.valueOf(fahrzeuge[i].fzNr).length()) {
                 pos1 = i;
-                laenge1 = String.valueOf(fahrzeuge[pos1].fzNr).length();
+                laenge[0] = String.valueOf(fahrzeuge[pos1].fzNr).length();
             }
         }
-        int laenge2 = 0;
         int pos2 = 0;
         for (int i = 1; i <= 17; i++) {
             if (fahrzeuge[pos2].hersteller.length() < fahrzeuge[i].hersteller.length()) {
                 pos2 = i;
-                laenge2 = fahrzeuge[pos2].hersteller.length();
+                laenge[1] = fahrzeuge[pos2].hersteller.length();
             }
         }
-        int laenge3 = 0;
         int pos3 = 0;
         for (int i = 1; i <= 17; i++) {
             if (fahrzeuge[pos3].typ.length() < fahrzeuge[i].typ.length()) {
                 pos3 = i;
-                laenge3 = fahrzeuge[pos3].typ.length();
+                laenge[2] = fahrzeuge[pos3].typ.length();
             }
         }
-        int laenge4 = 0;
         int pos4 = 0;
         for (int i = 1; i <= 17; i++) {
             if (fahrzeuge[pos4].ausfuehrung.length() < fahrzeuge[i].ausfuehrung.length()) {
                 pos4 = i;
-                laenge4 = fahrzeuge[pos4].ausfuehrung.length();
+                laenge[3] = fahrzeuge[pos4].ausfuehrung.length();
             }
         }
-        int laenge5 = 0;
         int pos5 = 0;
         for (int i = 1; i <= 17; i++) {
             if (String.valueOf(fahrzeuge[pos5].ps).length() == String.valueOf(fahrzeuge[i].ps).length()) {
-                laenge5 = String.valueOf(fahrzeuge[pos5].ps).length();
+                laenge[4] = String.valueOf(fahrzeuge[pos5].ps).length();
             }
             if (String.valueOf(fahrzeuge[pos5].ps).length() < String.valueOf(fahrzeuge[i].ps).length()) {
                 pos5 = i;
-                laenge5 = String.valueOf(fahrzeuge[pos5].ps).length();
+                laenge[4] = String.valueOf(fahrzeuge[pos5].ps).length();
             }
         }
-        int laenge6 = 0;
         int pos6 = 0;
         for (int i = 1; i <= 17; i++) {
             if (fahrzeuge[pos6].ez.length() == fahrzeuge[i].ez.length()) {
-                laenge6 = fahrzeuge[pos6].ez.length();
+                laenge[5] = fahrzeuge[pos6].ez.length();
             }
             if (fahrzeuge[pos6].ez.length() < fahrzeuge[i].ez.length()) {
                 pos6 = i;
-                laenge6 = fahrzeuge[pos6].ez.length();
+                laenge[5] = fahrzeuge[pos6].ez.length();
             }
         }
-        int laenge7 = 0;
         int pos7 = 0;
         for (int i = 1; i <= 17; i++) {
             if (String.valueOf(fahrzeuge[pos7].km).length() == String.valueOf(fahrzeuge[i].km).length()) {
-                laenge7 = String.valueOf(fahrzeuge[pos7].km).length();
+                laenge[6] = String.valueOf(fahrzeuge[pos7].km).length();
             }
             if (String.valueOf(fahrzeuge[pos7].km).length() < String.valueOf(fahrzeuge[i].km).length()) {
                 pos7 = i;
-                laenge7 = String.valueOf(fahrzeuge[pos7].km).length();
+                laenge[6] = String.valueOf(fahrzeuge[pos7].km).length();
             }
         }
-        int laenge8 = 0;
         int pos8 = 0;
         for (int i = 1; i <= 17; i++) {
             if (String.valueOf(fahrzeuge[pos8].preis).length() == String.valueOf(fahrzeuge[i].preis).length()) {
-                laenge8 = String.valueOf(fahrzeuge[pos8].preis).length();
+                laenge[7] = String.valueOf(fahrzeuge[pos8].preis).length();
             }
             if (String.valueOf(fahrzeuge[pos8].preis).length() < String.valueOf(fahrzeuge[i].preis).length()) {
                 pos8 = i;
-                laenge8 = String.valueOf(fahrzeuge[pos8].preis).length();
+                laenge[7] = String.valueOf(fahrzeuge[pos8].preis).length();
             }
         }
 
-        System.out.println("Anzahl der Zeichen des laengsten Eintrages jeder Spalte: " + laenge1 + ", " + laenge2 + ", " + laenge3 + ", " + laenge4 + ", " + laenge5 + ", " + laenge6 + ", " + laenge7 + ", " + laenge8 + "\n");
+        System.out.println("Anzahl der Zeichen des laengsten Eintrages jeder Spalte: " + laenge[0] + ", " + laenge[1] + ", " + laenge[2] + ", " + laenge[3] + ", " + laenge[4] + ", " + laenge[5] + ", " + laenge[6] + ", " + laenge[7]);
 
-        String leer;
-        for (int i = 0; i < 17; i++) {
-            for (int j = 0; j <= leer.length(); j++) {
-                String leer = leer + " ";
+        double bestandwert = 0;
+
+        for (int i = 0; i < 18; i++) {
+
+
+            int leer;
+            leer = laenge[0] - String.valueOf(fahrzeuge[i].fzNr).length() + 1;
+            String leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
             }
-            System.out.println(fahrzeuge[i].fzNr + leer + "|" + fahrzeuge[i].hersteller + leer + "|");
+            System.out.print("\n" + fahrzeuge[i].fzNr + leerz + "|");
+
+
+            leer = laenge[1] - fahrzeuge[i].hersteller.length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(fahrzeuge[i].hersteller + leerz + "|");
+
+            leer = laenge[2] - fahrzeuge[i].typ.length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(fahrzeuge[i].typ + leerz + "|");
+
+            leer = laenge[3] - fahrzeuge[i].ausfuehrung.length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(fahrzeuge[i].ausfuehrung + leerz + "|");
+
+            leer = laenge[4] - String.valueOf(fahrzeuge[i].ps).length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(leerz + fahrzeuge[i].ps + "|");
+
+            leer = laenge[5] - fahrzeuge[i].ez.length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(fahrzeuge[i].ez + leerz + "|");
+
+            leer = laenge[6] - String.valueOf(fahrzeuge[i].km).length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(leerz + fahrzeuge[i].km + "|");
+
+            leer = laenge[7] - String.valueOf(fahrzeuge[i].preis).length() + 1;
+            leerz = ".";
+            for (int j = 1; j < leer; j++) {
+
+                leerz = leerz + ".";
+
+
+            }
+            System.out.print(fahrzeuge[i].preis + leerz + "|");
+
+            //Bestandwert
+            bestandwert += fahrzeuge[i].preis;
+            System.out.print(bestandwert);
+
+
+
         }
 
+        double mittelwert = 0;
+        mittelwert = bestandwert / 18;
+
+
+
+        System.out.println("\n\nBestandswert: " + bestandwert + " EUR");
+        System.out.println("Mittlerer EKnetto: "+mittelwert);
 
     }
+
+
 }
+
