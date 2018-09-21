@@ -344,7 +344,6 @@ public class FahrzeuglisteA {
 
             //Bestandwert
             bestandwert += fahrzeuge[i].preis;
-            System.out.print(bestandwert);
 
 
 
