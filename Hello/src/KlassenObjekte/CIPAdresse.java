@@ -1,4 +1,4 @@
-package hello;
+package KlassenObjekte;
 
 import java.util.regex.Pattern;
 
@@ -48,7 +48,29 @@ public class CIPAdresse {
     }
 
     public String getIPStr() {
+        String strIPtemp = null;
 
+        if (this.ip != null) {
+            strIPtemp = new String("");
+            for (int i = 0; i < 4; i++) {
+                if (strIPtemp.length() > 0) {
+                    strIPtemp += ".";
+
+                }
+                strIPtemp += Integer.toString(ip[i]);
+            }
+        }
+        return (strIPtemp);
+
+    }
+
+    private boolean checkIP(int aIP[]) {
+        if (aIP.length != 4) return (false);
+
+        for (int i = 0; i < 4; i++) {
+            if (aIP[i] < 0 || aIP[i] > 255) return (false);
+        }
+        return (true);
     }
 
 }
