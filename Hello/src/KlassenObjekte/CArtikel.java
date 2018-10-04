@@ -4,12 +4,10 @@ import java.text.DecimalFormat;
 
 public class CArtikel implements Cloneable {
 
-    private int aNr = 0;
-    private String aBezeichnung = "";
-    private float aPreis = 0;
-    private int aAnzahl = 0;
+    private CRecArtikel oArtikel = null;
 
     CArtikel() {
+        oArtikel = new CRecArtikel();
     }
 
     @Override
@@ -21,71 +19,80 @@ public class CArtikel implements Cloneable {
             return null;
         }
     }
+    public CArtikel(int nr, String bezeichnung, float preis, int anzahl,int wg) {
+        if (nr > 0) oArtikel.nr = nr;
+        oArtikel.bezeichnung = bezeichnung;
+        if (preis > 0) oArtikel.preis = preis;
+        if (anzahl > 0) oArtikel.anzahl = anzahl;
+        if (wg > 0) oArtikel.warengruppe = wg;
 
-    public void setArtikel(int nr, String bezeichnung, float preis, int anzahl) {
-        if (nr > 0) this.aNr = nr;
-        this.aBezeichnung = bezeichnung;
-        if (preis > 0) this.aPreis = preis;
-        if (anzahl > 0) this.aAnzahl = anzahl;
+    }
+
+    public void setArtikel(int nr, String bezeichnung, float preis, int anzahl, int wg) {
+        if (nr > 0) oArtikel.nr = nr;
+        oArtikel.bezeichnung = bezeichnung;
+        if (preis > 0) oArtikel.preis = preis;
+        if (anzahl > 0) oArtikel.anzahl = anzahl;
+        if (wg > 0) oArtikel.warengruppe = wg;
     }
 
     public void setNr(int nr) {
         if (nr < 0) {
-            this.aNr = 0;
+            oArtikel.nr = 0;
         } else {
-            this.aNr = nr;
+            oArtikel.nr = nr;
         }
     }
 
     public int getNr() {
-        return (this.aNr);
+        return (oArtikel.nr);
     }
 
     public void setBezeichnung(String bezeichnung) {
-        if (bezeichnung != null) this.aBezeichnung = bezeichnung;
+        if (bezeichnung != null) oArtikel.bezeichnung = bezeichnung;
     }
 
     public String getBezeichnung() {
-        return (this.aBezeichnung);
+        return (oArtikel.bezeichnung);
     }
 
     public void setPreis(int preis) {
         if (preis < 0) {
-            this.aPreis = 0;
+            oArtikel.preis = 0;
         } else {
-            this.aPreis = preis;
+            oArtikel.preis = preis;
         }
     }
 
     public float getPreis() {
-        return (this.aPreis);
+        return (oArtikel.preis);
     }
 
     public String getPreisAsString() {
         String tmpPreis = "";
-        tmpPreis = floatAsStr(this.aPreis);
+        tmpPreis = floatAsStr(oArtikel.preis);
         return (tmpPreis);
     }
 
     public void setAnzahl(int anzahl) {
         if (anzahl < 0) {
-            this.aAnzahl = 0;
+            oArtikel.anzahl = 0;
         } else {
-            this.aAnzahl = anzahl;
+            oArtikel.anzahl = anzahl;
         }
     }
 
     public int getAnzahl() {
-        return (this.aAnzahl);
+        return (oArtikel.anzahl);
     }
 
     public float getGesamtpreis() {
-        return (this.aPreis * this.aAnzahl);
+        return (oArtikel.preis * oArtikel.anzahl);
     }
 
     public String getGesamtpreisAsStr() {
         String tmpPreis = "";
-        tmpPreis = floatAsStr(this.aPreis * this.aAnzahl);
+        tmpPreis = floatAsStr(oArtikel.preis * oArtikel.anzahl);
         return (tmpPreis);
     }
 
@@ -94,6 +101,19 @@ public class CArtikel implements Cloneable {
         DecimalFormat df = new DecimalFormat("#,##0.00");
         tmpPreis = df.format(value);
         return (tmpPreis);
+    }
+
+    public void setWarenGruppe(int wg) {
+        if (wg < 0) {
+            oArtikel.warengruppe = 0;
+
+        } else {
+            oArtikel.warengruppe = wg;
+        }
+    }
+
+    public int getWarengruppe() {
+        return (oArtikel.warengruppe);
     }
 
 

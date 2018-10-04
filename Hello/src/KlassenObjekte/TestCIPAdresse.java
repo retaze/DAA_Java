@@ -37,5 +37,13 @@ public class TestCIPAdresse {
         System.out.print("Wert von objIP2: ");
         System.out.println(objIP2.getIPStr());
 
+        int IP[] = null;
+        int Anzahl_A = 0;
+        int Anzahl_B = 0;
+        int Anzahl_C = 0;
+        int pos;
+
+
+
     }
 }

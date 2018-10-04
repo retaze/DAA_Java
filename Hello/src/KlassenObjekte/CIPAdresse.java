@@ -73,6 +73,32 @@ public class CIPAdresse implements Cloneable {
         return (true);
     }
 
+    public CIPAdresse() {
+        this.ip = new int[4];
+        this.ip[0] = 1;
+        this.ip[1] = 1;
+        this.ip[2] = 1;
+        this.ip[3] = 1;
+    }
+
+    public CIPAdresse(String sIP) {
+        if (!setIPStr(sIP)) this.ip = null;
+    }
+
+    public CIPAdresse(int aIP[]) {
+        if (checkIP(aIP)) this.ip = aIP;
+
+    }
+
+    public String getNetClass() {
+        if (ip[0] >= 0 && ip[0] < 128) return ("A");
+        if (ip[0] >= 128 && ip[0] < 192) return ("B");
+        if (ip[0] >= 192 && ip[0] < 224) return ("C");
+        if (ip[0] >= 224 && ip[0] < 240) return ("D");
+        if (ip[0] >= 240 && ip[0] < 256) return ("E");
+        return ("U");
+    }
+
     @Override
     public CIPAdresse clone() {
         try {
