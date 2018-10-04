@@ -2,7 +2,7 @@ package KlassenObjekte;
 
 import java.text.DecimalFormat;
 
-public class CArtikel {
+public class CArtikel implements Cloneable {
 
     private int aNr = 0;
     private String aBezeichnung = "";
@@ -10,6 +10,16 @@ public class CArtikel {
     private int aAnzahl = 0;
 
     CArtikel() {
+    }
+
+    @Override
+    public CArtikel clone() {
+        try {
+            return (CArtikel) super.clone();
+        } catch (CloneNotSupportedException ex) {
+            ex.printStackTrace();
+            return null;
+        }
     }
 
     public void setArtikel(int nr, String bezeichnung, float preis, int anzahl) {

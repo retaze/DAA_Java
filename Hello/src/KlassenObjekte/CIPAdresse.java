@@ -2,7 +2,7 @@ package KlassenObjekte;
 
 import java.util.regex.Pattern;
 
-public class CIPAdresse {
+public class CIPAdresse implements Cloneable {
 
     private int ip[] = null;
 
@@ -71,6 +71,16 @@ public class CIPAdresse {
             if (aIP[i] < 0 || aIP[i] > 255) return (false);
         }
         return (true);
+    }
+
+    @Override
+    public CIPAdresse clone() {
+        try {
+            return (CIPAdresse) super.clone();
+        } catch (CloneNotSupportedException ex) {
+            ex.printStackTrace();
+            return null;
+        }
     }
 
 }
