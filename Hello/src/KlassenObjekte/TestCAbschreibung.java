@@ -1,16 +1,27 @@
 package KlassenObjekte;
 
+import java.util.Arrays;
+
 public class TestCAbschreibung {
 
     public static void main(String args[]) {
 
         CAbschreibung testAbschr = new CAbschreibung();
 
-        testAbschr.setAnfang(1000, 5);
+        testAbschr.setAnfang(10500, 7);
 
 
-        System.out.println("Jahr: " + testAbschr.getErsteAbschreibung()[0] + " Jahresanfang: " + testAbschr.getErsteAbschreibung()[1] + " Abschreibung: " + testAbschr.getErsteAbschreibung()[2] + " Jahresende: " + testAbschr.getErsteAbschreibung()[3] + " Jahresanfang: " + testAbschr.getErsteAbschreibung()[4] + " Jahresende: " + testAbschr.getErsteAbschreibung()[5]);
-        System.out.println("Jahr: " + testAbschr.getFolgeAbschreibung()[0] + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[1] + " Abschreibung: " + testAbschr.getFolgeAbschreibung()[2] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[3] + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[4] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[5]);
+        System.out.println(Arrays.toString(testAbschr.getErsteAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+
+
+
+        // + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[1] + " Abschreibung: " + testAbschr.getFolgeAbschreibung()[2] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[3] + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[4] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[5]);
 
     }
 }
