@@ -12,16 +12,9 @@ public class TestCAbschreibung {
 
 
         System.out.println(Arrays.toString(testAbschr.getErsteAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-        System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
-
-
-
-        // + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[1] + " Abschreibung: " + testAbschr.getFolgeAbschreibung()[2] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[3] + " Jahresanfang: " + testAbschr.getFolgeAbschreibung()[4] + " Jahresende: " + testAbschr.getFolgeAbschreibung()[5]);
+        for (int i=1; i <= testAbschr.getNutzungsDauer()-1; i++ ) {
+            System.out.println(Arrays.toString(testAbschr.getFolgeAbschreibung()));
+        }
 
     }
 }

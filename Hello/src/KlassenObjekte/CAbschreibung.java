@@ -10,6 +10,10 @@ public class CAbschreibung {
         this.nutzungsDauer = nutzungsDauer;
     }
 
+    public int getNutzungsDauer() {
+        return nutzungsDauer;
+    }
+
     public float[] getErsteAbschreibung() {
         float arrAbschr[] = {0, 0, 0, 0, 0, 0};
 
