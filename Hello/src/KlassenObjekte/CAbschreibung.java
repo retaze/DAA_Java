@@ -25,6 +25,11 @@ public class CAbschreibung {
         this.restEnde = this.restAnfang - this.abschreibung;
         this.abschrEnde = this.abschreibung;
 
+        return getFloats(arrAbschr);
+
+    }
+
+    private float[] getFloats(float[] arrAbschr) {
         arrAbschr[0] = this.jahr;
         arrAbschr[1] = this.restAnfang;
         arrAbschr[2] = this.abschreibung;
@@ -32,7 +37,6 @@ public class CAbschreibung {
         arrAbschr[4] = this.abschrAnfang;
         arrAbschr[5] = this.abschrEnde;
         return arrAbschr;
-
     }
 
     public float[] getFolgeAbschreibung() {
@@ -47,12 +51,6 @@ public class CAbschreibung {
         this.restEnde = this.restAnfang - this.abschreibung;
         this.abschrEnde = this.abschrAnfang + this.abschreibung;
 
-        arrAbschr[0] = this.jahr;
-        arrAbschr[1] = this.restAnfang;
-        arrAbschr[2] = this.abschreibung;
-        arrAbschr[3] = this.restEnde;
-        arrAbschr[4] = this.abschrAnfang;
-        arrAbschr[5] = this.abschrEnde;
-        return arrAbschr;
+        return getFloats(arrAbschr);
     }
 }

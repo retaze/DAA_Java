@@ -346,16 +346,14 @@ public class FahrzeuglisteA {
             bestandwert += fahrzeuge[i].preis;
 
 
-
         }
 
         double mittelwert = 0;
         mittelwert = bestandwert / 18;
 
 
-
         System.out.println("\n\nBestandswert: " + bestandwert + " EUR");
-        System.out.println("Mittlerer EKnetto: "+mittelwert);
+        System.out.println("Mittlerer EKnetto: " + mittelwert);
 
     }
 
