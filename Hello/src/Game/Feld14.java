@@ -17,7 +17,10 @@ public class Feld14 {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
-
+                case "befreie Anabia":
+                    Objekte.credits();
+                    exit = 1;
+                    break;
                 case "öffne Brief":
                     Objekte.brief();
                     break;

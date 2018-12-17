@@ -4,15 +4,32 @@ import java.util.Scanner;
 
 public class Feld9 {
 
-    public static void start() {
+    public static int waldMonster = 10;
 
-        System.out.println("Du stehst tief im dunklen Wald.");
-        if (Objekte.waldMonster == 1) {
-            System.out.println("Ein grimmiges Wald-Monster kommt auf dich zugerannt und greift dich an.");
-        }
+
+    public static void start() {
 
         String eingabe;
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Du stehst tief im dunklen Wald.");
+        if (Feld9.waldMonster > 0) {
+            System.out.println("Ein böses Wald-Monster kommt auf dich zugerannt und greift dich an.");
+            System.out.println("\bWas möchtest du nun tun?");
+            eingabe = sc.nextLine();
+            switch (eingabe) {
+
+                case "töte Wald-Monster":
+                    Feld9.waldMonster = 0;
+                    break;
+
+                default:
+                    System.out.println("Das habe ich leider nicht verstanden.");
+                    break;
+            }
+        }
+
+
 
         int exit = 0;
         while (exit == 0) {

@@ -4,16 +4,30 @@ import java.util.Scanner;
 
 public class Feld7 {
 
+    public static int ebenenMonster = 10;
+
     public static void start() {
-
-        System.out.println("Eine weite Ebene erstreckt sich vor dir.");
-        if (Objekte.ebenenMonster == 1) {
-            System.out.println("Ein grimmiges Ebenen-Monster kommt auf dich zugerannt und greift dich an.");
-        }
-
 
         String eingabe;
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Eine weite Ebene erstreckt sich vor dir.");
+        if (Feld7.ebenenMonster > 0) {
+            System.out.println("Ein grimmiges Ebenen-Monster kommt auf dich zugerannt und greift dich an.");
+            System.out.println("\bWas möchtest du nun tun?");
+            eingabe = sc.nextLine();
+            switch (eingabe) {
+
+                case "töte Ebenen-Monster":
+                    Feld7.ebenenMonster = 0;
+                    break;
+
+                default:
+                    System.out.println("Das habe ich leider nicht verstanden.");
+                    break;
+            }
+        }
+
 
         int exit = 0;
         while (exit == 0) {

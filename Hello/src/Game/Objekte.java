@@ -53,77 +53,78 @@ public class Objekte {
     }
 
     public static void umschauen3() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("In Richtung Norden geht es einen steilen Hang zu einer Hoch-Ebene hinauf.");
+        System.out.println("Nach Süden geht es zur alten Handelsstraße mit den Leichen.");
+        System.out.println("Im Osten erstreckt sich ein dichter Wald und im Westen das Stallach Gebirge");
     }
 
     public static void umschauen4() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Norden kannst du ganz schwach einen alten zugewachsenen Pfad erkennen. Vielleicht lohnt es sich, dass mal genau anzuschauen");
+        System.out.println("Nach Osten geht es die Ebene weiter.");
+        System.out.println("Im Süden liegt die Weggabelung der alten Handelsstraße und im Westen das Stallach Gebirge");
     }
 
     public static void umschauen5() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Norden und Westen kommst du nicht weiter. Hier fangen gleich die steilen Wände des Stallach Gebirges an");
+        System.out.println("Im Osten siehst du einen dunklen Fleck in der Gebirgewand. Was sich da wohl befindet?");
+        System.out.println("Auf die Hochebene kommst du Richtung Süden.");
     }
 
     public static void umschauen6() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Die Höhle ist erfrischend kühl, aber sehr dunkel.");
+        if (Feld6.truhe == 1) {
+            System.out.println("In der hinteren Ecke kannst du eine kleine Truhe erspähen.");
+        }
     }
 
     public static void umschauen7() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Norden siehst du die Felswände des Stallach Gebirges.");
+        System.out.println("Im Osten und Westen geht es weiter auf der Hoch-Ebene.");
+        System.out.println("Im Süden geht ein steiler Abhang in einen dichten Wald über.");
     }
 
     public static void umschauen8() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Der Wald ist sehr dicht und dämmerig. Trotzdem kannst du deutlich einen Pfad im Osten und Westen erkennen.");
+        System.out.println("Im Norden und Süden wird der Wald langsam lichter.");
     }
 
     public static void umschauen9() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Der Wald ist sehr dicht und dämmerig. Trotzdem kannst du deutlich einen Pfad im Osten und Westen erkennen.");
+        System.out.println("Im Norden und Süden wird der Wald langsam lichter.");
     }
 
     public static void umschauen10() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Norden siehst du die Felswände des Stallach Gebirges.");
+        System.out.println("Im Osten und Westen geht es weiter auf der Hoch-Ebene.");
+        System.out.println("Im Süden geht ein steiler Abhang in einen dichten Wald über.");
     }
 
     public static void umschauen11() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Osten und Norden begrenzt das Gebirge den Weg.");
+        System.out.println("In Richtung Süden schlängelt sich ein Pfad die Ebene runter.");
+        System.out.println("Im Westen geht es auf der Ebene weiter.");
     }
 
     public static void umschauen12() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Im Norden schlängelt sich ein Pfad die Hoch-Ebene hinauf.");
+        System.out.println("Im Süden ragt die mächtige Burg von Zaratul am Horizont herauf.");
+        System.out.println("Ein Wald liegt im Osten");
     }
 
     public static void umschauen13() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("In der Burg ist es unangenehm stickig.");
+        System.out.println("Im Norden befindet sich die Eingangstür.");
     }
 
     public static void umschauen14() {
-        System.out.println("Du befindest dich auf einer alten Handelsstraße.");
-        System.out.println("Diese Straße führt weiter Richtung Norden. Im Osten liegt der Goldsee, am anderen Ufer kannst du die Umrisse einer Burg erkennen.");
-        System.out.println("Der Westen und Süden ist durch das Stallach Gebirge begrenzt.");
+        System.out.println("Auf der linken Seite sind die Kerkerzellen. In der zweiten Zelle siehst du Prinzessin Anabia.");
     }
 
+    public static void credits() {
+        System.out.println("Du hast das Spiel beendet. Herzlichen Glückwunsch!");
+
+
+    }
 
 
 }

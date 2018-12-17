@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Feld6 {
 
+    public static int truhe = 1;
+
     public static void start() {
 
         System.out.println("Du stehst in einer Höhle");
@@ -17,8 +19,18 @@ public class Feld6 {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
-                case "nehme Schwert":
-
+                case "öffne Truhe":
+                    if (Feld6.truhe == 1) {
+                        System.out.println("Die Truhe ist leer. Schade, da war wohl schon jemand vor dir da.");
+                        Feld6.truhe = 0;
+                    }
+                    break;
+                case "oeffne Truhe":
+                    if (Feld6.truhe == 1) {
+                        System.out.println("Die Truhe ist leer. Schade, da war wohl schon jemand vor dir da.");
+                        Feld6.truhe = 0;
+                    }
+                    break;
                 case "öffne Brief":
                     Objekte.brief();
                     break;

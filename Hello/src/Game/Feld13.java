@@ -4,13 +4,30 @@ import java.util.Scanner;
 
 public class Feld13 {
 
+    public static int zaratul = 10;
+
     public static void start() {
-
-        System.out.println("Du betrittst die Burg Zaratul.");
-
 
         String eingabe;
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Du betrittst die Burg Zaratul.");
+        if (Feld13.zaratul > 0) {
+            System.out.println("Zaratul kommt auf dich zugerannt und greift dich an.");
+            System.out.println("\bWas möchtest du nun tun?");
+            eingabe = sc.nextLine();
+            switch (eingabe) {
+
+                case "töte Zaratul":
+                    Feld13.zaratul = 0;
+                    break;
+
+                default:
+                    System.out.println("Das habe ich leider nicht verstanden.");
+                    break;
+            }
+        }
+
 
         int exit = 0;
         while (exit == 0) {
