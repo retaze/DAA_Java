@@ -9,8 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String eingabe;
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("\b");
