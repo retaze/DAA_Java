@@ -46,9 +46,6 @@ public class Feld1 {
                 case "gehe nach Westen":
                     Objekte.gebirge();
                     break;
-                case "gehe zum ende":
-                    Feld14.start();
-                    break;
                 case "Ende":
                     Main.exit = 1;
                     break;
