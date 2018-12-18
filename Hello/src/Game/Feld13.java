@@ -18,7 +18,7 @@ public class Feld13 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "toete Zaratul":
+                case "töte Zaratul":
                     Feld13.zaratul = 0;
                     System.out.println("Du tötest Zaratul.");
                     break;
