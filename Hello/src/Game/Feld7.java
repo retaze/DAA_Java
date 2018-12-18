@@ -18,7 +18,7 @@ public class Feld7 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "töte Ebenen-Monster":
+                case "toete Ebenen-Monster":
                     Feld7.ebenenMonster = 0;
                     System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
@@ -30,8 +30,7 @@ public class Feld7 {
         }
 
 
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
@@ -67,7 +66,7 @@ public class Feld7 {
                     Feld4.start();
                     break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");

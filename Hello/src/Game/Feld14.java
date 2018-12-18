@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Feld14 {
 
+
     public static void start() {
 
         System.out.println("Du befindest dich nun im Kerker.");
@@ -12,26 +13,24 @@ public class Feld14 {
         String eingabe;
         Scanner sc = new Scanner(System.in);
 
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
                 case "befreie Anabia":
                     Objekte.credits();
-                    exit = 1;
-                    break;
+                    Main.exit = 1;
                 case "rette Anabia":
                     Objekte.credits();
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 case "öffne Zellentür":
                     Objekte.credits();
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 case "öffne Zelle":
                     Objekte.credits();
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 case "öffne Brief":
                     Objekte.brief();
@@ -64,7 +63,7 @@ public class Feld14 {
                     Objekte.burgEnde();
                     break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");

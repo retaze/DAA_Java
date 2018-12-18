@@ -12,8 +12,7 @@ public class Feld1 {
 
         System.out.println("Du stehst auf der alten Handelsstraße.");
 
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
@@ -47,8 +46,11 @@ public class Feld1 {
                 case "gehe nach Westen":
                     Objekte.gebirge();
                     break;
+                case "gehe zum ende":
+                    Feld14.start();
+                    break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");

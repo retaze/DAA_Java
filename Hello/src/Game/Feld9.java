@@ -6,7 +6,6 @@ public class Feld9 {
 
     public static int waldMonster = 10;
 
-
     public static void start() {
 
         String eingabe;
@@ -19,7 +18,7 @@ public class Feld9 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "töte Wald-Monster":
+                case "toete Wald-Monster":
                     Feld9.waldMonster = 0;
                     System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
@@ -31,9 +30,7 @@ public class Feld9 {
         }
 
 
-
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
@@ -69,7 +66,7 @@ public class Feld9 {
                     Feld8.start();
                     break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");

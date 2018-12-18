@@ -121,9 +121,9 @@ public class Objekte {
     }
 
     public static void credits() {
-        System.out.println("Du hast das Spiel beendet. Herzlichen Glückwunsch!");
-
-
+        System.out.println("Anabia fällt dir um den Hals und ihr liebt euch gleich noch im Kerker auf der alten Matratze in der Zellenecke.");
+        System.out.println("\b");
+        System.out.println("Du hast das Spiel beendet. Herzlichen Glückwunsch");
     }
 
 

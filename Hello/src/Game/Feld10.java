@@ -12,8 +12,7 @@ public class Feld10 {
         String eingabe;
         Scanner sc = new Scanner(System.in);
 
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
@@ -49,7 +48,7 @@ public class Feld10 {
                     Feld7.start();
                     break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");

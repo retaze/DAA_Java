@@ -6,6 +6,8 @@ public class Main {
 
     public static String name;
     public static int schwert = 0;
+    public static int exit = 0;
+
 
     public static void main(String[] args) {
 

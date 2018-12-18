@@ -18,7 +18,7 @@ public class Feld13 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "töte Zaratul":
+                case "toete Zaratul":
                     Feld13.zaratul = 0;
                     System.out.println("Du tötest Zaratul.");
                     break;
@@ -30,8 +30,7 @@ public class Feld13 {
         }
 
 
-        int exit = 0;
-        while (exit == 0) {
+        while (Main.exit == 0) {
             System.out.println("\bWas möchtest du nun tun?");
             eingabe = sc.nextLine();
             switch (eingabe) {
@@ -67,7 +66,7 @@ public class Feld13 {
                     Objekte.burgEnde();
                     break;
                 case "Ende":
-                    exit = 1;
+                    Main.exit = 1;
                     break;
                 default:
                     System.out.println("Das habe ich leider nicht verstanden.");
