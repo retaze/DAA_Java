@@ -20,6 +20,7 @@ public class Feld13 {
 
                 case "töte Zaratul":
                     Feld13.zaratul = 0;
+                    System.out.println("Du tötest Zaratul.");
                     break;
 
                 default:

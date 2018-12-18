@@ -21,6 +21,18 @@ public class Feld14 {
                     Objekte.credits();
                     exit = 1;
                     break;
+                case "rette Anabia":
+                    Objekte.credits();
+                    exit = 1;
+                    break;
+                case "öffne Zellentür":
+                    Objekte.credits();
+                    exit = 1;
+                    break;
+                case "öffne Zelle":
+                    Objekte.credits();
+                    exit = 1;
+                    break;
                 case "öffne Brief":
                     Objekte.brief();
                     break;

@@ -21,6 +21,7 @@ public class Feld9 {
 
                 case "töte Wald-Monster":
                     Feld9.waldMonster = 0;
+                    System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
 
                 default:

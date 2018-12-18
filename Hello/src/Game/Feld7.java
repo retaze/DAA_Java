@@ -20,6 +20,7 @@ public class Feld7 {
 
                 case "töte Ebenen-Monster":
                     Feld7.ebenenMonster = 0;
+                    System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
 
                 default:
