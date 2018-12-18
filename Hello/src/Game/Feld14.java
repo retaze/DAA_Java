@@ -53,7 +53,7 @@ public class Feld14 {
                 case "gehe nach Norden":
                     Feld13.start();
                     break;
-                case "gehe nach Süden":
+                case "gehe nach Sueden":
                     Objekte.burgEnde();
                     break;
                 case "gehe nach Osten":

@@ -41,7 +41,7 @@ public class Feld2 {
                 case "gehe nach Norden":
                     Feld3.start();
                     break;
-                case "gehe nach Süden":
+                case "gehe nach Sueden":
                     Feld1.start();
                     break;
                 case "gehe nach Osten":
