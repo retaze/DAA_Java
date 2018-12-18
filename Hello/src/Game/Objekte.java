@@ -4,7 +4,6 @@ public class Objekte {
 
     public static void goldsee() {
         System.out.println("Vor dir liegt der Goldsee und du hast kein Boot. Benutze lieber einen anderen Weg.");
-
     }
 
     public static void gebirge() {
@@ -125,6 +124,4 @@ public class Objekte {
         System.out.println("\b");
         System.out.println("Du hast das Spiel beendet. Herzlichen Glückwunsch");
     }
-
-
 }
