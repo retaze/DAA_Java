@@ -18,7 +18,7 @@ public class Feld9 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "toete Wald-Monster":
+                case "töte Wald-Monster":
                     Feld9.waldMonster = 0;
                     System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
@@ -56,7 +56,7 @@ public class Feld9 {
                 case "gehe nach Norden":
                     Objekte.waldEnde();
                     break;
-                case "gehe nach Sueden":
+                case "gehe nach Süden":
                     Objekte.goldsee();
                     break;
                 case "gehe nach Osten":

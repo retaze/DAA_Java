@@ -18,7 +18,7 @@ public class Feld7 {
             eingabe = sc.nextLine();
             switch (eingabe) {
 
-                case "toete Ebenen-Monster":
+                case "töte Ebenen-Monster":
                     Feld7.ebenenMonster = 0;
                     System.out.println("Du  bist sehr stark und tötest das Monster mit einem Schwertstreich.");
                     break;
@@ -56,7 +56,7 @@ public class Feld7 {
                 case "gehe nach Norden":
                     Objekte.gebirge();
                     break;
-                case "gehe nach Sueden":
+                case "gehe nach Süden":
                     Objekte.ebeneEnde();
                     break;
                 case "gehe nach Osten":

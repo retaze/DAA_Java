@@ -51,7 +51,7 @@ public class Feld6 {
                 case "gehe nach Norden":
                     Objekte.hoehle();
                     break;
-                case "gehe nach Sueden":
+                case "gehe nach Süden":
                     Objekte.hoehle();
                     break;
                 case "gehe nach Osten":

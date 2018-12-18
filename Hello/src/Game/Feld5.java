@@ -38,7 +38,7 @@ public class Feld5 {
                 case "gehe nach Norden":
                     Objekte.gebirge();
                     break;
-                case "gehe nach Sueden":
+                case "gehe nach Süden":
                     Feld4.start();
                     break;
                 case "gehe nach Osten":
