@@ -14,7 +14,9 @@ public class Feld9 {
         System.out.println("Du stehst tief im dunklen Wald.");
         if (Feld9.waldMonster > 0) {
             System.out.println("Ein böses Wald-Monster kommt auf dich zugerannt und greift dich an.");
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 
@@ -31,7 +33,9 @@ public class Feld9 {
 
 
         while (Main.exit == 0) {
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 

@@ -13,7 +13,9 @@ public class Feld2 {
         Scanner sc = new Scanner(System.in);
 
         while (Main.exit == 0) {
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
                 case "nehme Schwert":

@@ -14,7 +14,9 @@ public class Feld7 {
         System.out.println("Eine weite Ebene erstreckt sich vor dir.");
         if (Feld7.ebenenMonster > 0) {
             System.out.println("Ein grimmiges Ebenen-Monster kommt auf dich zugerannt und greift dich an.");
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 
@@ -31,7 +33,9 @@ public class Feld7 {
 
 
         while (Main.exit == 0) {
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 

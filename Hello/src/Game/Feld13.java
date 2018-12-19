@@ -14,7 +14,9 @@ public class Feld13 {
         System.out.println("Du betrittst die Burg Zaratul.");
         if (Feld13.zaratul > 0) {
             System.out.println("Zaratul kommt auf dich zugerannt und greift dich an.");
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 
@@ -31,7 +33,9 @@ public class Feld13 {
 
 
         while (Main.exit == 0) {
-            System.out.println("\bWas möchtest du nun tun?");
+            System.out.println("\b");
+            System.out.println("Was möchtest du nun tun?");
+            System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {
 
