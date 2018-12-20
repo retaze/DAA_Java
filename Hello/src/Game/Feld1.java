@@ -5,20 +5,17 @@ import java.io.*;
 
 public class Feld1 {
 
+
+    //Clears Screen in java
     public static void clrscr() {
-        //Clears Screen in java
         try {
-            if (System.getProperty("os.name").contains("Windows"))
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            else
-                Runtime.getRuntime().exec("clear");
-        } catch (IOException | InterruptedException ex) {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            }
+        catch (IOException | InterruptedException ex) {
         }
     }
 
     public static void start() {
-
-
 
         String eingabe;
 
