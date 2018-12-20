@@ -8,10 +8,11 @@ public class Feld1 {
 
     //Clears Screen in java
     public static void clrscr() {
-        try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            }
-        catch (IOException | InterruptedException ex) {
+        try
+        {
+          new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        }
+          catch (IOException | InterruptedException ex) {
         }
     }
 
