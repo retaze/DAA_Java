@@ -1,15 +1,30 @@
 package Game;
 
 import java.util.Scanner;
+import java.io.*;
 
 public class Feld1 {
 
+    public static void clrscr() {
+        //Clears Screen in java
+        try {
+            if (System.getProperty("os.name").contains("Windows"))
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            else
+                Runtime.getRuntime().exec("clear");
+        } catch (IOException | InterruptedException ex) {
+        }
+    }
 
     public static void start() {
+
+
 
         String eingabe;
 
         Scanner sc = new Scanner(System.in);
+        clrscr();
+        System.out.println("\b");
         System.out.println("Du stehst auf der alten Handelsstraße.");
 
         while (Main.exit == 0) {

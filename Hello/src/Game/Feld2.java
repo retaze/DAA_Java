@@ -13,6 +13,7 @@ public class Feld2 {
 
         //for (int i = 0; i < 100; ++i) System.out.println();
         clrscr();
+        System.out.println("\b");
         System.out.println("Du befindest dich auf der alten Handelsstraße.");
 
 
