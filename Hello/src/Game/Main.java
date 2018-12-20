@@ -31,5 +31,7 @@ public class Main {
 
         Feld1.start();
 
+        hallo welt
+
     }
 }
