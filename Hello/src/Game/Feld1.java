@@ -4,17 +4,18 @@ import java.util.Scanner;
 
 public class Feld1 {
 
+
     public static void start() {
 
         String eingabe;
 
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Du stehst auf der alten Handelsstraße.");
 
         while (Main.exit == 0) {
             System.out.println("\b");
             System.out.println("Was möchtest du nun tun?");
+
             System.out.println("\b");
             eingabe = sc.nextLine();
             switch (eingabe) {

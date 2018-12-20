@@ -4,8 +4,15 @@ import java.util.Scanner;
 
 public class Feld2 {
 
+    public static void clrscr() {
+        //Clears Screen in java
+        new ProcessBuilder("cmd", "/c", "cls");
+    }
+
     public static void start() {
 
+        //for (int i = 0; i < 100; ++i) System.out.println();
+        clrscr();
         System.out.println("Du befindest dich auf der alten Handelsstraße.");
 
 
