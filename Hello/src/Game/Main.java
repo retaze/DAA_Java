@@ -1,5 +1,7 @@
 package Game;
 
+// Lars ist doof
+
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +28,8 @@ public class Main {
         System.out.println("\"" + name + " heißt du? Dann ist dies hier für dich!\"");
         System.out.println("Der Reiter wirft dir einen Brief zu, wendet sein Pferd und verschwindet wieder.");
         System.out.println("\b");
+
+        System.out.println("Test");
 
         Feld1.start();
 
