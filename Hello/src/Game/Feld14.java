@@ -22,6 +22,7 @@ public class Feld14 {
                 case "befreie Anabia":
                     Objekte.credits();
                     Main.exit = 1;
+                    break;
                 case "rette Anabia":
                     Objekte.credits();
                     Main.exit = 1;

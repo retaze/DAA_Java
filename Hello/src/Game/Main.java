@@ -29,8 +29,5 @@ public class Main {
 
         Feld1.start();
 
-
     }
-
-
 }
