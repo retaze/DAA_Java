@@ -111,8 +111,8 @@ public class Objekte {
     }
 
     public static void umschauen13() {
-        System.out.println("In der Burg ist es unangenehm stickig.");
-        System.out.println("Im Norden befindet sich die Eingangstür.");
+        System.out.println("In der Burg ist es unangenehm stickig und dunkel");
+        System.out.println("Im Norden befindet sich das Burgtor.");
     }
 
     public static void umschauen14() {
