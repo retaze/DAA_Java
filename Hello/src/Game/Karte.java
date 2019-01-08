@@ -15,35 +15,31 @@ public class Karte {
                 { 'I', 'j', 'K', 'L' },
                 { 'M', 'n', 'O', 'P' }
         };
-
         Boolean[][] kartenArrayAufgedeckt = new Boolean[][] {
                 {true,  false, false, false},
                 {false, false, false, false},
                 {false, false, false, false},
                 {false, false, false, false}
         };
-
         //Position an der sich der Spieler befindet
         int xPosition = 0;
         int yPosition = 0;
-
         Scanner reader = new Scanner(System.in);
-
         //Main Game Loop
         while(true) {
             String command = reader.nextLine();
             if(command.equals("exit")){
                 break;
-            }else if (command.equals("norden")){
+            }else if (command.equals("norden") && yPosition > 0){
                 yPosition -= 1;
                 kartenArrayAufgedeckt[yPosition][xPosition] = true;
-            }else if(command.equals("osten")){
+            }else if(command.equals("osten") && xPosition < 3 ){
                 xPosition += 1;
                 kartenArrayAufgedeckt[yPosition][xPosition] = true;
-            }else if(command.equals("sueden")){
+            }else if(command.equals("sueden") && yPosition < 3 ){
                 yPosition += 1;
                 kartenArrayAufgedeckt[yPosition][xPosition] = true;
-            }else if(command.equals("westen")){
+            }else if(command.equals("westen") && xPosition > 0 ){
                 xPosition -= 1;
                 kartenArrayAufgedeckt[yPosition][xPosition] = true;
             }else {
@@ -71,7 +67,6 @@ public class Karte {
                     } else {
                         System.out.print("     ");
                     }
-
                     System.out.print("  ");
                 }
                 System.out.println();
